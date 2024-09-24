@@ -12,9 +12,6 @@
         
     })
     
-   
-
-
 
 let navOpenBtn = document.getElementById('nav-open-btn');
 let navCloseBtn = document.getElementById('nav-close-btn');
