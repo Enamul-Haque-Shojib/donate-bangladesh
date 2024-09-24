@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="https://kit.fontawesome.com/178d1484e3.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        "btn-primary":"#B4F461",
+                        "primary":"#F9F7F3",
+                        "secondary":"#1111110D"
+                        
+                    },
+                    fontFamily: {
+                        lexend: ["Lexend", 'sans-serif'],
+                    },
+                 
+                }
+            }
+        }
+    </script>
+    
+</head>
+<body class="bg-white text-black font-lexend">
+    <header class="lg:h-[190px] lg:flex lg:flex-col justify-between pb-[10px] fixed top-0 left-0 right-0 lg:opacity-95 opacity-100 lg:bg-white">
+        <nav class=" lg:h-[80px] h-[80px] bg-primary lg:opacity-95 opacity-95">
+            <div class="lg:flex flex justify-between items-center lg:w-[80%] w-[95%] h-[70%] m-auto">
+                <button id="blog1" class="lg:block hidden rounded-lg bg-btn-primary w-[110px] h-[49px] font-[600] text-[20px]">Blog</button>
+                <div class="flex items-center">
+                    <img src="./assets/logo.png" alt="" class="w-[48px] h-[48px]">
+                    <h3 class="font-[600px] text-[20px] ms-[10px]">Donate Bangladesh</h3>
+                </div>
+                <div class="lg:block hidden lg:flex items-center">
+                    <img src="./assets/coin.png" alt="" class="w-[35px] h-[35px]">
+                    <h3 class="font-[600px] text-[20px] ms-[10px]"><span id="account-balance1" class="account-balance">500</span> BDT</h3>
+                </div>
+                <button id="nav-open-btn" class="block lg:hidden"><i class="fa-solid fa-bars"></i></button>
+                <button id="nav-close-btn" class="hidden lg:hidden"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </nav>
+        <div class="lg:flex lg:flex-row lg:justify-center lg:gap-5 lg:block hidden">
+            <button class="donation-btn w-[157px] h-[57px] rounded-lg bg-btn-primary text-[20px] font-[600]">Donation</button>
+            <button class="history-btn w-[157px] h-[57px] rounded-lg bg-primary text-[20px] font-[600]">History</button>
+        </div>
+        <div id="nav-field" class="border w-[60%] ms-auto flex flex-col justify-center items-center p-[20px] bg-primary hidden gap-y-3 mt-[10px] opacity-95 rounded-lg">
+            <button id="blog2" class="bg-btn-primary w-[157px] h-[57px] font-[600] text-[16px]">Blog</button>
+            <button class="donation-btn w-[157px] h-[57px] rounded-lg bg-btn-primary text-[16px] font-[600]">Donation</button>
+            <button class="history-btn w-[157px] h-[57px] rounded-lg bg-primary text-[16px] font-[600]">History</button>
+            <div class="flex items-center">
+                <img src="./assets/coin.png" alt="" class="w-[35px] h-[35px]">
+                <h3 class="font-[600px] text-[20px] ms-[10px]"><span id="account-balance2" class="account-balance">500</span> BDT</h3>
+            </div>
+        </div>
+    </header>
+    <main class="lg:w-[80%] w-[95%] mx-auto lg:pt-[200px] pt-[100px]">
+        <section id="donation-field" class="w-full h-full">
+            <div class="donate-box border lg:p-[30px] p-[10px] rounded-lg w-full my-[30px]">
+                <div class="lg:flex lg:flex-row flex-col lg:gap-x-8">
+                <div class="lg:w-[50%] lg:mb-0 mb-[20px]">
+                    <img
+                    src="./assets/noakhali.png"
+                    class="rounded-lg w-full h-full" />
+                </div>
+                  <div class="lg:w-[50%] gap-y-4 flex flex-col justify-center">
+                    <div class="bg-secondary w-[110px] h-[44px] flex justify-center items-center gap-1 rounded-lg">
+                        <img class="w-[25px] h-[25px]" src="./assets/coin.png" alt="">
+                        <h4 class="text-[16px] font-[400]"><span id="donate-balance1" class="donate-balance">300</span> BDT</h4>
+                    </div>
+                    <h3 id="donate-title1" class="donate-title text-[20px] font-[700]">Donate for Flood at Noakhali, Bangladesh</h3>
+                    <p class="font-[300]">
+                        The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+                    </p>
+                    <input id="input-amount1" type="text" placeholder="Write Donation Amount" class="input-amount input input-bordered w-full bg-white" />
+                
+                    <button id="donate-now-btn1" class="donate-now-btn w-full h-[57px] text-[20px] font-[600] rounded-lg bg-btn-primary ">Donate Now</button>
+                    
+                  </div>
+                </div>
+              </div>
+            <div class="donate-box border lg:p-[30px] p-[10px] rounded-lg w-full my-[30px]">
+                <div class="lg:flex lg:flex-row flex-col lg:gap-x-8">
+                <div class="lg:w-[50%] lg:mb-0 mb-[20px]">
+                    <img
+                    src="./assets/feni.png"
+                    class="rounded-lg w-full h-full" />
+                </div>
+                  <div class="lg:w-[50%] gap-y-4 flex flex-col justify-center">
+                    <div class="bg-secondary w-[110px] h-[44px] flex justify-center items-center gap-1 rounded-lg">
+                        <img class="w-[25px] h-[25px]" src="./assets/coin.png" alt="">
+                        <h4 class="text-[16px] font-[400]"><span id="donate-balance2" class="donate-balance">200</span> BDT</h4>
+                    </div>
+                    <h3 id="donate-title2" class="donate-title text-[20px] font-[700]">Donate for Flood Relief in Feni,Bangladesh</h3>
+                    <p class="font-[300]">
+                        The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+                    </p>
+                    <input id="input-amount2" type="text" placeholder="Write Donation Amount" class="input-amount input input-bordered w-full bg-white" />
+                
+                    <button id="donate-now-btn2" class="donate-now-btn w-full h-[57px] text-[20px] font-[600] rounded-lg bg-btn-primary ">Donate Now</button>
+                  </div>
+                </div>
+              </div>
+            <div class="donate-box border lg:p-[30px] p-[10px] rounded-lg w-full my-[30px]">
+                <div class="lg:flex lg:flex-row flex-col lg:gap-x-8">
+                <div class="lg:w-[50%] lg:mb-0 mb-[20px]">
+                    <img
+                    src="./assets/quota-protest.png"
+                    class="rounded-lg w-full h-full" />
+                </div>
+                  <div class="lg:w-[50%] gap-y-4 flex flex-col justify-center">
+                    <div class="bg-secondary w-[110px] h-[44px] flex justify-center items-center gap-1 rounded-lg">
+                        <img class="w-[25px] h-[25px]" src="./assets/coin.png" alt="">
+                        <h4 class="text-[16px] font-[400]"><span id="donate-balance3" class="donate-balance">100</span> BDT</h4>
+                    </div>
+                    <h3 id="donate-title3" class="donate-title text-[20px] font-[700]">Aid for Injured in the Quota Movement</h3>
+                    <p class="font-[300]">
+                        The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+                    </p>
+                    <input id="input-amount3" type="text" placeholder="Write Donation Amount" class="input-amount input input-bordered w-full bg-white" />
+                    
+                    <button id="donate-now-btn3" class="donate-now-btn w-full h-[57px] text-[20px] font-[600] rounded-lg bg-btn-primary ">Donate Now</button>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <section id="history-field" class="w-full h-screen hidden">
+        </section>
+        <section>
+            <dialog id="my_modal_1" class="modal">
+                <div class="modal-box bg-white flex flex-col justify-center items-center">
+                  <h1 class="text-3xl font-extrabold">Congrates!</h1>
+                  <img class="py-2 lg:w-[40px] lg:h-[60px] " src="./assets/coin.png" alt="">
+                  <p class="py-2">You have Donated for Humankind</p>
+                    <h3 class="text-2xl font-bold py-2">Successfully</h3>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      
+                      <button class="w-[247px] h-[50px] bg-primary rounded-lg font-bold">close confirmation</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+        </section>
+       
+    </main>
+    <footer class="w-full h-[100px] bg-primary">
+
+    </footer>
+    
+    <script src="./utilities.js"></script>
+    <script src="./nav.js"></script>
+    <script src="./app.js"></script>
+    
+</body>
+</html>
+
