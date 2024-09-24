@@ -31,6 +31,8 @@ donateNowBtn1.addEventListener('click',function(e) {
    
 
 })
+
+
 donateNowBtn2.addEventListener('click',function(e) {
     e.preventDefault();
     
@@ -40,6 +42,8 @@ donateNowBtn2.addEventListener('click',function(e) {
     notificationDonate(isSuccesful);
 
 })
+
+
 donateNowBtn3.addEventListener('click',function(e) {
     e.preventDefault();
     
