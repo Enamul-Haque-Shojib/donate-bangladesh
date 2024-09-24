@@ -23,11 +23,6 @@ let donationBtn  = document.getElementsByClassName('donation-btn')
 let historyBtn  = document.getElementsByClassName('history-btn')
 
 
-
-
-
-
-
 navOpenBtn.addEventListener('click', function(){
    
     navButtonFunction(true);
